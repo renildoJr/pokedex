@@ -33,6 +33,7 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .pokemon .number {
@@ -155,6 +156,7 @@
 }
 
 .modal .pokemon-header .pokemon-img {
+    width: 226px;
     display: block;
     margin: 0 auto;
     position: relative;

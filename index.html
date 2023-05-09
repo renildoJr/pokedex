@@ -20,7 +20,7 @@
 </head>
 <body>
     <!-- Lista de Pokemons -->
-    <section class="content disable">
+    <section class="content ">
         <h1>Pokedex</h1>
         <ol id="pokemon-list" class="pokemons">
             <!-- ..... Pokemons Here .... -->
@@ -32,53 +32,9 @@
     </section>
 
     <!-- Pokemon Individual Selecionado -->
-    <section class="modal grass">
-        <header class="pokemon-header">
-            <a class="btn" id="btn-return"><i class="fa-solid fa-arrow-left"></i></a>
-            <h1 class="name">Bulbasaur</h1>
-            <span class="number">#001</span>
-            <ol class="types">
-                <li>Grass</li>
-                <li>Poison</li>
-            </ol>
-            <img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="bulbasaur">
-        </header>
-        <main>
-            <nav class="nav-links">
-                <ul class="menu">
-                    <li class="selected">About</li>
-                    <li>Base Stats</li>
-                    <li>Evolution</li>
-                    <li>Moves</li>
-                </ul>
-            </nav>
-            <section class="details-section active">
-                <ul>
-                    <li>Species <strong>Seed</strong></li>
-                    <li>Height <strong>1.2.3.(0.40cm)</strong></li>
-                    <li>Weight <strong>15.2lbs(6.9 kg)</strong></li>
-                    <li>Avilities <strong>Overgrow, Chlorophyl</strong></li>
-                    <li><h2>Breeding</h2></li>
-                    <li>Gender <strong>(icon) 87.5%  (icon) 12.5%</strong></li>
-                    <li>Egg Groups <strong>Monster</strong></li>
-                    <li>Egg Cycle <strong>Grass</strong></li>
-                </ul>
-                <span>Types defenses</span>
-                <p>The effectiveness of each type on Charmander</p>
-            </section>
-            <section class="details-section">
-                <ul>
-                    <li>HP <strong>45 (bar)</strong></li>
-                    <li>Attack <strong>45 (bar)</strong></li>
-                    <li>Defense <strong>45 (bar)</strong></li>
-                    <li>Sp. Atk <strong>45 (bar)</strong></li>
-                    <li>Sp. Def <strong>45 (bar)</strong></li>
-                    <li>Speed <strong>45 (bar)</strong></li>
-                    <li>Total <strong>45 (bar)</strong></li>
-                </ul>
-            </section>
-        </main>
-    </section>
+    <div class="modal-container disable">
+        <!-- --- Pokemon Here --- -->
+    </div>
     <script src="https://kit.fontawesome.com/5034295430.js" crossorigin="anonymous"></script>
     <script src="/assets/js/pokemon_model.js"></script>
     <script src="assets/js/poke-api.js"></script>
