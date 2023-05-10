@@ -227,8 +227,17 @@
 }
 
 .modal .details-section h2 {
-    font-size: .2rem;
+    font-size: 1.4rem;
     color: #000000;
+}
+
+.modal .details-section .stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.modal .details-section .stats-container .status-values li {
+    color: #000;
 }
 
 .disable {

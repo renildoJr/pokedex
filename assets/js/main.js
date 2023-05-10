@@ -63,29 +63,30 @@ function openModal(id) {
                         <li>Moves</li>
                     </ul>
                 </nav>
-                <section class="details-section active">
-                    <ul>
-                        <li>Species <strong>Seed</strong></li>
-                        <li>Height <strong>${pokemon.height}</strong></li>
-                        <li>Weight <strong>${pokemon.weight}</strong></li>
-                        <li>Avilities <strong>Overgrow, Chlorophyl</strong></li>
-                        <li><h2>Breeding</h2></li>
-                        <li>Gender <strong>(icon) 87.5%  (icon) 12.5%</strong></li>
-                        <li>Egg Groups <strong>Monster</strong></li>
-                        <li>Egg Cycle <strong>Grass</strong></li>
-                    </ul>
-                    <span>Types defenses</span>
-                    <p>The effectiveness of each type on Charmander</p>
-                </section>
                 <section class="details-section">
                     <ul>
-                        <li>HP <strong>45 (bar)</strong></li>
-                        <li>Attack <strong>45 (bar)</strong></li>
-                        <li>Defense <strong>45 (bar)</strong></li>
-                        <li>Sp. Atk <strong>45 (bar)</strong></li>
-                        <li>Sp. Def <strong>45 (bar)</strong></li>
-                        <li>Speed <strong>45 (bar)</strong></li>
-                        <li>Total <strong>45 (bar)</strong></li>
+                        <li>Height <strong>${pokemon.height}</strong></li>
+                        <li>Weight <strong>${pokemon.weight}</strong></li>
+                        <li>Abilities <strong>${pokemon.abilities.map(ability=>ability).join(', ')}</strong></li>                    
+                    </ul>
+                </section>
+                <section class="details-section active">
+                    <ul class="stats-container">
+                        <div class="status-names">
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Sp. Atk</li>
+                            <li>Sp. Def</li>
+                            <li>Speed</li>
+                            <li>Total</li>
+                            <h2>Type defenses</h2>
+                    <p>the effectiveness of each type on ${pokemon.name}</p>
+                        </div>
+                        <div class="status-values">
+                            ${pokemon.stats.map((stat)=>`<li>${stat}</li>`).join("")}
+                            ${pokemon.stats.reduce((acc, curr)=>acc + curr)} 
+                        </div>
                     </ul>
                 </section>
             </main>

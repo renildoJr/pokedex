@@ -1,9 +1,12 @@
 class Pokemon {
+    // About
     number;
     name;
     type;
-    types = [];
     photo;
     height;
     weight;
+    types = [];
+    abilities = [];
+    stats = [];
 }
