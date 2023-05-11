@@ -20,7 +20,7 @@
 </head>
 <body>
     <!-- Lista de Pokemons -->
-    <section class="content ">
+    <section class="content">
         <h1>Pokedex</h1>
         <ol id="pokemon-list" class="pokemons">
             <!-- ..... Pokemons Here .... -->
@@ -32,8 +32,39 @@
     </section>
 
     <!-- Pokemon Individual Selecionado -->
+    <!-- <div class="modal-container disable"> -->
     <div class="modal-container disable">
         <!-- --- Pokemon Here --- -->
+        <section class="modal">
+            <header class="pokemon-header">
+                <a class="btn" id="btnReturn"><i class="fa-solid fa-arrow-left"></i></a>
+                <div class="header-dynamic-content">
+                    <!-- Javascript Dynamic Content here -->
+                </div>
+            </header>
+            <main>
+                <nav class="nav-links">
+                    <ul class="menu">
+                        <li class="selected">About</li>
+                        <li>Base Stats</li>
+                        <li>Evolution</li>
+                        <li>Moves</li>
+                    </ul>
+                </nav>
+                <section class="details-section active">
+                    <!-- Javascript Dynamic Content here --> 
+                </section>
+                <section class="details-section">
+                    <!-- Javascript Dynamic Content here -->  
+                </section>
+                <section class="details-section">
+                    <h2 style="text-align: center">Nada para mostrar ainda...</h2>
+                </section>
+                <section class="details-section">
+                    <!-- Javascript Dynamic Content here -->  
+                </section>
+            </main>
+        </section>
     </div>
     <script src="https://kit.fontawesome.com/5034295430.js" crossorigin="anonymous"></script>
     <script src="/assets/js/pokemon_model.js"></script>

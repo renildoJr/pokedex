@@ -35,6 +35,7 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
 }
 
 pokeApi.getPokemon = (id) => {
+    id += 1
     return fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
                 .then(response => response.json())
                 .then(convertPokeApiDetailToPokemon)
